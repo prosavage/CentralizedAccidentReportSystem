@@ -182,7 +182,7 @@ public class Controller {
          injuriesList.add(Injuries.TORSO.name());
       }
          System.out.println("DB update attempted"); //hi
-      MongoDBBridge mongoDBBridge = new MongoDBBridge(new MongoClientURI("mongodb://198.50.227.17:27017"));
+      MongoDBBridge mongoDBBridge = new MongoDBBridge(new MongoClientURI());
       DBObject accidentObj = new Accident(name, false, injuriesList, System.currentTimeMillis(), description, hospitalName, sex, level).toDBObject();
       mongoDBBridge.sendShit(accidentObj);
       System.out.println("DB updated");

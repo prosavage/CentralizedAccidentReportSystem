@@ -37,7 +37,7 @@ public class Controller {
         mild = 0;
         moderate = 0;
         severe = 0;
-        MongoDBBridge mongoDBBridge = new MongoDBBridge(new MongoClientURI("mongodb://198.50.227.17:27017"));
+        MongoDBBridge mongoDBBridge = new MongoDBBridge(new MongoClientURI());
         DBObject dbObject = mongoDBBridge.get(hospitalName);
         List<Accident> accidentList = new ArrayList<>();
         BasicDBList accidentCollection = (BasicDBList) dbObject.get("accidents");
