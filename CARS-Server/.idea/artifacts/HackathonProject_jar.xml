@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HackathonProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HackathonProject_jar</output-path>
+    <root id="archive" name="HackathonProject.jar">
+      <element id="module-output" name="HackathonProject" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.12.3/mongo-java-driver-2.12.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

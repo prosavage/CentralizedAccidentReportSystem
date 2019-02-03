@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="1280.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.prosavage.hospitalclient.Controller">
+   <children>
+      <JFXListView fx:id="patientList" layoutX="62.0" layoutY="71.0" prefHeight="467.0" prefWidth="241.0" style="-fx-background-color: #34495e;" />
+      <Pane layoutX="388.0" layoutY="137.0" prefHeight="302.0" prefWidth="504.0" style="-fx-background-color: #34495e; -fx-background-radius: 10;">
+         <children>
+            <Pane layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="454.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 10; -fx-background-border: 10;" />
+            <Label layoutX="41.0" layoutY="72.0" prefHeight="39.0" prefWidth="45.0" text="Name" textFill="#2980b9" />
+            <Label layoutX="41.0" layoutY="111.0" prefHeight="39.0" prefWidth="45.0" text="Severity" textFill="#2980b9" />
+            <Label layoutX="41.0" layoutY="144.0" prefHeight="39.0" prefWidth="33.0" text="Injury" textFill="#2980b9" />
+            <Label layoutX="41.0" layoutY="177.0" prefHeight="39.0" prefWidth="45.0" text="Time" textFill="#2980b9" />
+            <JFXTextField fx:id="nameField" editable="false" focusColor="#2980b9" layoutX="117.0" layoutY="79.0" prefHeight="25.0" prefWidth="322.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="sevField" editable="false" focusColor="#2980b9" layoutX="117.0" layoutY="118.0" prefHeight="25.0" prefWidth="322.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="injField" editable="false" focusColor="#2980b9" layoutX="117.0" layoutY="151.0" prefHeight="25.0" prefWidth="322.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="timeField" editable="false" focusColor="#2980b9" layoutX="117.0" layoutY="196.0" prefHeight="25.0" prefWidth="322.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <Label layoutX="41.0" layoutY="242.0" prefHeight="39.0" prefWidth="45.0" text="Desc." textFill="#2980b9" />
+            <JFXTextArea fx:id="descField" editable="false" focusColor="#2980b9" layoutX="117.0" layoutY="235.0" prefHeight="52.0" prefWidth="322.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <Label alignment="CENTER" layoutX="132.0" layoutY="14.0" prefHeight="31.0" prefWidth="251.0" text="About Patient" textFill="#2980b9" />
+         </children>
+      </Pane>
+      <Pane layoutX="962.0" layoutY="164.0" prefHeight="247.0" prefWidth="268.0" style="-fx-background-color: #34495e; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="34.0" layoutY="49.0" prefHeight="39.0" prefWidth="45.0" text="Total" textFill="#2980b9" />
+            <Label alignment="CENTER_RIGHT" layoutX="-10.0" layoutY="133.0" prefHeight="39.0" prefWidth="66.0" text="Mild" textFill="#2980b9" />
+            <Label alignment="CENTER_RIGHT" layoutX="18.0" layoutY="165.0" prefHeight="39.0" prefWidth="66.0" text="Moderate" textFill="#2980b9" />
+            <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="197.0" prefHeight="39.0" prefWidth="66.0" text="Severe" textFill="#2980b9" />
+            <JFXTextField fx:id="totalField" editable="false" focusColor="#2980b9" layoutX="89.0" layoutY="56.0" prefHeight="25.0" prefWidth="138.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="mildField" editable="false" focusColor="#2980b9" layoutX="96.0" layoutY="140.0" prefHeight="25.0" prefWidth="138.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="moderateField" editable="false" focusColor="#2980b9" layoutX="96.0" layoutY="172.0" prefHeight="25.0" prefWidth="138.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <JFXTextField fx:id="severeField" editable="false" focusColor="#2980b9" layoutX="96.0" layoutY="204.0" prefHeight="25.0" prefWidth="138.0" style="-fx-text-fill: white;" unFocusColor="#27ae60" />
+            <Pane layoutX="34.0" layoutY="15.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="3.0" prefHeight="25.0" prefWidth="76.0" text="Statistics" textAlignment="CENTER" textFill="#2980b9" />
+               </children>
+            </Pane>
+            <Pane layoutX="34.0" layoutY="98.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" layoutX="67.0" layoutY="-5.0" prefHeight="39.0" prefWidth="66.0" text="By Severity" textAlignment="CENTER" textFill="#2980b9" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="336.0" style="-fx-background-color: #34495e; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="4.0" prefHeight="31.0" prefWidth="76.0" text="Patients" textAlignment="CENTER" textFill="#2980b9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="438.0" layoutY="477.0" onAction="#onInfo" prefHeight="39.0" prefWidth="138.0" style="-fx-background-color: #2980b9; -fx-background-radius: 10;" text="Get Info." textFill="WHITE" />
+      <JFXButton layoutX="675.0" layoutY="477.0" onAction="#onRefresh" prefHeight="39.0" prefWidth="138.0" style="-fx-background-color: #2980b9; -fx-background-radius: 10;" text="Refresh" textFill="WHITE" />
+      <ImageView fitHeight="117.0" fitWidth="214.0" layoutX="491.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoHackathonsmall.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="640.0" layoutY="26.0" prefHeight="88.0" prefWidth="85.0" text="Centralized Accident Report System" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

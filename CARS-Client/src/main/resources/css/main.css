@@ -1,0 +1,7 @@
+.jfx-slider > .track {
+    -fx-background-color: linear-gradient(to right, #27ae60 0%, #f1c40f 50%, #c0392b 100%);
+}
+/* Styling the filled track */
+.jfx-slider > .colored-track {
+    -fx-background-color: rgba(0,0,0,0);
+}
